@@ -2,6 +2,8 @@ import React from 'react'
 import { Routes, Route, NavLink } from 'react-router-dom'
 import About from './pages/About.jsx'
 import Career from './pages/Career.jsx'
+import Projects from './pages/Projects.jsx'
+import Skills from './pages/Skills.jsx'
 import styles from './App.module.css'
 
 export default function App() {
@@ -15,16 +17,32 @@ export default function App() {
             className={({ isActive }) =>
               isActive ? styles.activeLink : styles.link
             }
-          >
-            소개
-          </NavLink>
-          <NavLink
+			>
+				소개
+			</NavLink>
+			<NavLink
             to="/career"
             className={({ isActive }) =>
               isActive ? styles.activeLink : styles.link
             }
-          >
-            경력사항
+			>
+				경력사항
+			</NavLink>
+			<NavLink
+            to="/Skills"
+            className={({ isActive }) =>
+              isActive ? styles.activeLink : styles.link
+            }
+			>
+				기술 스택
+			</NavLink>
+			<NavLink
+            to="/Projects"
+            className={({ isActive }) =>
+              isActive ? styles.activeLink : styles.link
+            }
+			>
+				참여 프로젝트
           </NavLink>
         </nav>
       </header>
@@ -32,7 +50,9 @@ export default function App() {
       <main className={styles.main}>
         <Routes>
           <Route path="/" element={<About />} />
-          <Route path="/career" element={<Career />} />
+          <Route path="/Career" element={<Career />} />
+          <Route path="/Skills" element={<Skills />} />
+          <Route path="/Projects" element={<Projects />} />
         </Routes>
       </main>
     </div>
