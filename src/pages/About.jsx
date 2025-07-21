@@ -47,13 +47,13 @@ export default function About() {
           <li>Advanced Locomotion System (ALS), Unreal Lyra 프레임워크 활용 경험</li>
           <li>Adobe Flash, Autodesk ScaleForm – 게임 UI 개발</li>
           <li>HTML5, CSS, JavaScript – 웹 기반 교과서 및 UI 개발</li>
-          <li>버전 관리: Perforce, GIT</li>
+          <li>버전 관리: Perforce, GIT, SVN</li>
           <li>프로젝트 관리 도구: JIRA, Confluence</li>
         </ul>
       </section>
 
       <section className={styles.section}>
-        <h2 className={styles.subtitle}>인턴·대외활동 및 해외 경험</h2>
+        <h2 className={styles.subtitle}>해외 경험</h2>
         <p>
           2016년 4월 중국 출장 – 세가 퍼블리싱 코리아 재직 중 DALE사 출장 근무 (Football Manager Online 중국 런칭 지원)
         </p>

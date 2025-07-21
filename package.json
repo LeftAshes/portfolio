@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://LeftAshes.github.io/portfolio",
+  "homepage": "https://leftashes.github.io/portfolio",
   "type": "module",
   "scripts": {
     "dev": "vite",
