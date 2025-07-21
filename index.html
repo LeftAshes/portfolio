@@ -1,13 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>최민호 | Game Developer</title>
-    <link rel="icon" href="/favicon.ico" />
-  </head>
-  <body class="bg-white dark:bg-gray-900">
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>최민호 - Game Developer</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #eee;
+    margin: 0; padding: 0;
+  }
+  header {
+    background-color: #1f1f1f;
+    padding: 20px 40px;
+    text-align: center;
+    border-bottom: 2px solid #4CAF50;
+  }
+  header h1 {
+    margin: 0;
+    font-weight: 700;
+  }
+  nav {
+    margin-top: 10px;
+  }
+  nav a {
+    color: #4CAF50;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+  }
+  nav a:hover {
+    text-decoration: underline;
+  }
+  main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  section {
+    margin-bottom: 50px;
+  }
+  section h2 {
+    border-bottom: 3px solid #4CAF50;
+    padding-bottom: 10px;
+  }
+  .project {
+    background-color: #222;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  .project h3 {
+    margin-top: 0;
+    color: #81c784;
+  }
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .skill {
+    background-color: #333;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+  }
+  footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #1f1f1f;
+    border-top: 2px solid #4CAF50;
+    color: #999;
+  }
+  a.contact-link {
+    color: #4CAF50;
+    text-decoration: none;
+  }
+</style>
+</head>
+<body class="bg-white dark:bg-gray-900">
+
+<header>
+  <h1>최민호</h1>
+  <nav>
+    <a href="#about">소개</a>
+    <a href="#projects">프로젝트</a>
+    <a href="#skills">기술 스택</a>
+    <a href="#contact">연락처</a>
+  </nav>
+</header>
+
+<main>
+  <section id="about">
+    <h2>소개</h2>
+    <p>안녕하세요! 저는 열정적인 게임 개발자 최민호입니다. Unity와 Unreal Engine을 주로 사용하며, 게임 플레이 시스템과 AI 개발에 관심이 많습니다.</p>
+  </section>
+
+  <section id="projects">
+    <h2>프로젝트</h2>
+    <div class="project">
+      <h3>FPS 게임 개발 프로젝트</h3>
+      <p>Unity 엔진을 사용해 3인칭 슈팅 게임 프로토타입 제작. 플레이어 무기 시스템, 적 AI, 맵 디자인 담당.</p>
+      <a href="https://github.com/minho/fps-project" target="_blank" style="color:#81c784;">깃허브 보기</a>
+    </div>
+    <div class="project">
+      <h3>2D 퍼즐 게임</h3>
+      <p>JavaScript와 HTML5 Canvas를 사용하여 브라우저 기반 퍼즐 게임 개발. 난이도 조절 및 UI 디자인 담당.</p>
+      <a href="https://minho.github.io/puzzle-game" target="_blank" style="color:#81c784;">게임 플레이하기</a>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>기술 스택</h2>
+    <div class="skills-list">
+      <div class="skill">Unity (C#)</div>
+      <div class="skill">Unreal Engine (C++)</div>
+      <div class="skill">JavaScript / HTML5</div>
+      <div class="skill">Git / GitHub</div>
+      <div class="skill">Blender (3D 모델링)</div>
+      <div class="skill">Photoshop</div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>연락처</h2>
+    <p>이메일: <a href="mailto:minho@example.com" class="contact-link">minho@example.com</a></p>
+    <p>전화번호: 010-1234-5678</p>
+    <p>GitHub: <a href="https://github.com/minho" target="_blank" class="contact-link">github.com/minho</a></p>
+  </section>
+</main>
+
+<footer>
+  <p>© 2025 최민호. All rights reserved.</p>
+</footer>
+
+<script type="module" src="/src/main.jsx"></script>
+
+</body>
 </html>
