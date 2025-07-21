@@ -1,8 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/portfolio/',  // 반드시 저장소 이름으로 설정
+  base: '/portfolio/' // GitHub Pages용 저장소명
 })
