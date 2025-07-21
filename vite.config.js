@@ -1,7 +1,9 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
+const base = process.env.NODE_ENV === 'production' ? '/portfolio/' : '/'
+
 export default defineConfig({
   plugins: [react()],
-  base: '/portfolio/' // GitHub Pages용 저장소명
+  base: base,
 })

@@ -4,9 +4,11 @@ import { BrowserRouter } from 'react-router-dom'
 import App from './App'
 import './index.css'
 
+const basename = process.env.NODE_ENV === 'production' ? '/portfolio' : '/'
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter basename="/portfolio">
+    <BrowserRouter basename={basename}>
       <App />
     </BrowserRouter>
   </React.StrictMode>
