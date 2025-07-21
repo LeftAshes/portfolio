@@ -1,26 +1,42 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import About from './pages/About.jsx';
-import Career from './pages/Career.jsx';
+import React from 'react'
+import { Routes, Route, NavLink } from 'react-router-dom'
+import About from './pages/About.jsx'
+import Career from './pages/Career.jsx'
+import styles from './App.module.css'
 
 export default function App() {
   return (
-    <Router>
-      <header style={{ backgroundColor: '#1f1f1f', padding: '15px 30px', textAlign: 'center' }}>
-        <nav>
-          <Link to="/" style={{ margin: '0 15px', color: '#4caf50', textDecoration: 'none', fontWeight: '600' }}>소개</Link>
-          <Link to="/career" style={{ margin: '0 15px', color: '#4caf50', textDecoration: 'none', fontWeight: '600' }}>경력사항</Link>
+    <div className={styles.app}>
+      <header className={styles.header}>
+        <nav className={styles.nav}>
+          <NavLink
+            to="/"
+            end
+            className={({ isActive }) =>
+              isActive ? styles.activeLink : styles.link
+            }
+          >
+            소개
+          </NavLink>
+          <NavLink
+            to="/career"
+            className={({ isActive }) =>
+              isActive ? styles.activeLink : styles.link
+            }
+          >
+            경력사항
+          </NavLink>
         </nav>
       </header>
 
-      <Routes>
-        {/* 기본 화면은 About 컴포넌트 */}
-        <Route path="/" element={<About />} />
-
-        {/* /career 경로는 경력사항 페이지 */}
-        <Route path="/career" element={<Career />} />
-      </Routes>
-    </Router>
-  );
+      <main className={styles.main}>
+        <Routes>
+          <Route path="/" element={<About />} />
+          <Route path="/career" element={<Career />} />
+        </Routes>
+      </main>
+    </div>
+  )
 }
+
 
