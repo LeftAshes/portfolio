@@ -3,10 +3,12 @@ import ReactDOM from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
 import App from './App.jsx'
 
+const basename = process.env.NODE_ENV === 'production' ? '/portfolio' : '/'
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter>
-      <App />
+	<BrowserRouter basename={basename}>
+		<App />
     </BrowserRouter>
   </React.StrictMode>
 )
